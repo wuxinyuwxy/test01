@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     service-url:
-      defalutZone: http://localhost:10086/eureka
+      defaultZone: http://localhost:10086/eureka
     fetch-registry: true
     register-with-eureka: true
 spring:
