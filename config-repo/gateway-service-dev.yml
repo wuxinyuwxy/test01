@@ -10,10 +10,10 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: consumer-route
-        uri: lb://consumer-service
-        order: 0
-        predicates:
-          - Path=/api/consumer_service/**
-        filters:
-          - StripPrefix=2
+        - id: consumer-route
+          uri: lb://consumer-service
+          order: 0
+          predicates:
+            - Path=/api/consumer_service/**
+          filters:
+            - StripPrefix=2
